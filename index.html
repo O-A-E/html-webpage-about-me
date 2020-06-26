@@ -2,7 +2,11 @@
 <html>
     <head>
         <title> Home | Osase </title>
+        <!-- meta data:-->
 
+        <!-- set the character set, so the browswer knows which character set shoul dbe loaded and valid for this webpage.-->
+        <meta charset="UTF-8">
+        
         <!-- viewport meta controls how the website is seen -->
         <!-- for modern responsive web development -->
     <meta name="viewport" content = "width=device-width, initial-scale=1.0" >
@@ -12,7 +16,12 @@
         <meta name="description" content ="A website about Osase">
     <meta name="author" content = "Osase">
 
-    
+    <!-- Style(S):-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Script(S):-->
+    <!-- the defer attribute will cause this script to wait until the body is loaded before executing (important for DOM/ element manipulation by scripts) -->
+    <script src="js/scripts.js" type="text/javascript" defer>  </script>
     </head>
     <boody>
         <h1>Home</h1> <!-- this is the highest level heading (master heading) can be h2, h3, etc -->
@@ -37,12 +46,17 @@
         <p>
             I'd like to share with each of you my fave picture! Check it below!
         <figure>
-            <img src="img/pretty-flower.jpg" alt="A purple flower with a soft background. ">
-             <!-- img/ shows the folder name-->
-                <!-- alt text can be used for visually impaired users, shows context as to what's on the page without needing the actual photo-->
+        
+            <!-- src is the location of the image. -->
+            <img src="img/pretty-flower.jpg" alt="A purple flower with a soft background. " title= "A flower."> <!-- called a tool tip; shows when you hover over photo-->
+            <!-- img/ shows the folder name-->
+            <!-- alt text can be used for visually impaired users, shows context as to what's on the page without needing the actual photo-->
             <figcaption>
                 Illustration credited to:
-                <a href="https://pixabay.com/users/pezibear-526143/" >pezibear</a>
+                <!-- This link is considered an "absolute path"; use this if the link is from an external resource (a website)-->
+                <!-- the target="_blank" attribute opens the link in a new tab!-->
+                <!-- title is a "pop-up" tooltip, for when you hover over the element-->
+                <a href="https://pixabay.com/users/pezibear-526143/" target= "_blank" title= "Click here to view the original author's profile>">pezibear</a>
             </figcaption>
                
         </figure>
