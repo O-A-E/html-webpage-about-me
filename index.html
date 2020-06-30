@@ -26,7 +26,7 @@
     <boody>
         <h1>Home</h1> <!-- this is the highest level heading (master heading) can be h2, h3, etc -->
        <header></header>
-    
+    <header>
         <h2> Navigation </h2> <!-- sub heading/topic; next level of heading-->
         <nav> <!-- Navigation-->
             <ul>
@@ -39,6 +39,8 @@
                 </ul>
         </nav>
         </header>
+        
+        <main>
         <h3></h3> <!-- next level of sub-headeing-->
         <h2>Skills</h2>   <!-- back to second level of heading; numerical order is not necessary-->
         <p>
@@ -50,32 +52,90 @@
             <li>CSS3</li>
             <li>PHP</li>
         </ul>
-        <h2>My Fave Picture!</h2>
+        <!--
+            - Article is a semantic structing element that implies that the inner content is a self-contained article that make sense standing on its own.
+        -->
+        <article> 
+        <h2>My Fave Pictures!</h2>
+        <p>
+            Below are some of my fave pictures!
+        </p>
+        <!-- 
+            - Section is a semantic structuging element that does not imply the inner content is self contained. They can be used to break up articles and have subheadings.
+            - Remeber to go down in order of heading when using subheadings.
+            - Section goes inside of the article.
+        -->
+        <section>
+         <h3> Flowers:</h3>
         <p>
             I'd like to share with each of you my fave picture! Check it below!
-        <figure>
+        </p>
+            <figure>
         
             <!-- src is the location of the image. -->
             <img src="img/pretty-flower.jpg" alt="A purple flower with a soft background. " title= "A flower."> <!-- called a tool tip; shows when you hover over photo-->
             <!-- img/ shows the folder name-->
             <!-- alt text can be used for visually impaired users, shows context as to what's on the page without needing the actual photo-->
+            
+            <img class ="photo favourite" id="flower" src = "IMG/pretty-flower.jpg" alt="A purple flower. " title= "A flower.">
             <figcaption>
                 Illustration credited to:
                 <!-- This link is considered an "absolute path"; use this if the link is from an external resource (a website)-->
                 <!-- the target="_blank" attribute opens the link in a new tab!-->
                 <!-- title is a "pop-up" tooltip, for when you hover over the element-->
+               
                 <a href="https://pixabay.com/users/pezibear-526143/" target= "_blank" title= "Click here to view the original author's profile>">pezibear</a>
             </figcaption>
                
         </figure>
-        </p>
+    </section>
+    <section>
+        <!-- to do: pixabay-->
+        <h3> Desert:</h3>
+       <p>
+            Photo of the deser.
+       </p>
+           <figure>
+       
+                <img src="img/dessert.jpg" alt="A cool desert. " title= "A desert.">
+                <img class ="photo favourite" id="dessert" src = "IMG/dessert.jpg" alt="A a cracked dessert. " title= "A Dessert.">
+           <figcaption>
+               Illustration credited to:
+              
+               <a href="https://pixabay.com/photos/soil-cracks-clay-earth-dry-desert-5342049/" target= "_blank" title= "Click here to view the original author's profile>">oleg_mit</a>
+           </figcaption>
+              
+       </figure>
+   </section>
+    </article>
+    <!-- 
+    - Allows Google to see this is a self-contained structure more easily understood by compters
+    - goes outside of the article
+    - Aside is used for content that is tangentially related to teh article but once again may not make full sense and be taken out of context.
+    - defines something that is related to the main focus of the page, but not the main part of it; kind of like additional reading.
+    - Additional info; supplemental info
+    -->
+    <aside>
+        <h2> Hobbies </h2>
+        <p> I also enjoy drawing and swimming!</p>
+    </aside>
+    </main>
         <footer>
             <h2>Footer</h2>
+            <p>Thanks for visiting my page!</p>
+            <!-- div is a non-semantic blocklevel stylng element-->
+            <div>
+           
         <p>
-            &copy; copyright 2020 TECHCareers;
+            <!-- span is a non-semantic inline element.-->
+            <!--
+In our index page, our copyright is inside of the div, meaning it does not satisy "body>footer>p. only a direct desendent of footer will satisfy that selector. Therefoe it is orange"
+            -->
+            &copy; copyright 2020 <span>TECHCareers;</span>
             All Rights Reserved 
         </p> 
+        </div>
         </footer>
-       
+       </main>
     </boody>
 </html>
