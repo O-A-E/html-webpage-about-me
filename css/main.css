@@ -39,18 +39,24 @@ https://flukeout.github.io/ - bento box game for identifying selectirs!
     border: 2px solid black;
 
 }
+.flex{
+    display: flex;
+}
+.magenta, .orange, .lime {
+    display: inline
+}
     .magenta {
-        border: 2px solid magenta;
+        background-color:  magenta;
         width: 200px;
         height: 200px;
     }
     .orange {
-        border: 2px solid orange;
+        background-color:  orange;
         width: 150px;
         height: 150px;
     }
     .lime {
-        border: 2px solid lime;
+        background-color:  lime;
         width: 300px;
         height: 300px;
 }
