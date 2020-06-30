@@ -45,16 +45,16 @@ ID Selectors: Are used to select a SINGLE element with the given ID. IDs have hi
 /*
 https://flukeout.github.io/ - bento box game for identifying selectirs!
 */
-
+}
 #turbines {
     border: 3px solid red;
     border-radius: 10px;
-    width 50%;
+    width: 50%;
 }
 
 #main > p {
     font-size: 40px;
-    color: rgb(255,0,0;
+    color: rgb(255,0,0);
     font-weight:bolder;
     text-decoration: underline overline;
     font-style: italic;
